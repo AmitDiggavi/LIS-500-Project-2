@@ -1,0 +1,198 @@
+/* Deafult Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    outline: none;
+    font-family: "Mukta", sans-serif;
+}
+
+html{
+    font-size: 62.5%; /*all elements will be 62.5% of default size*/
+}
+/* End of Default Styles */
+
+/*Container*/
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    height: 100vh; 
+    position: absolute; /* this is the parent element of background so it needs to be relative*/
+}
+
+    /* Navigation bar */
+    .navbar
+    {
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:10;
+        width:100%;
+        height:12rem;
+        padding:0 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* End of Navigation bar*/
+
+    /* Home button */
+    .homebutton{
+        display: flex;
+        flex-direction: column;
+        background-color: #180e09; 
+        padding: 1rem 2rem; 
+        border-radius: 10px; 
+        width: fit-content; 
+    }
+
+    .homebutton span:nth-child(1){
+    font-family: "Verdana";
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color : white;
+
+    }
+
+    /* End of Home button*/
+
+    /* Nav items */
+    .nav-items {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 .5rem 1rem rgba(238, 5, 5, 0.2);
+    }
+    /*End of Nav items */
+
+/*Banner*/
+.banner{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    z-index: 4;
+}
+
+.banner h1{
+    font-family: "Mooli", cursive;
+    font-size: 10rem;
+    color: #fff;
+    text-shadow: 0 1rem 3rem rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+}
+
+.banner h3{
+    font-family: "Mooli", cursive;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    margin: 0 0 3rem 1rem;
+    margin-top: .5rem;
+}
+
+.banner p{
+    position: relative; 
+    bottom: 0; 
+    left: 0; 
+    padding: 1rem 2rem;
+    font-family: "Mooli", cursive;
+    font-size: 1.7rem; 
+    font-weight: 250; 
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    margin-bottom: 2rem; /* SPACING */
+}
+
+
+.banner button{
+    width: 15rem;
+    height: 5rem;
+    background: linear-gradient(to right, #aa3fec, #8430ea);
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    margin-left: 1rem;
+    cursor:pointer;
+    transition: transform 0.3s;
+}
+
+.banner button:hover{
+    transform: translateY(-0.2rem); /* move vertically*/
+}
+/*End of Banner*/
+
+/*Backgrounds*/
+.backgrounds div{  
+    position: absolute;
+}
+
+.bg-main{
+    width: 150%;
+    height: 150%; 
+    background: linear-gradient(to left, transparent, #4400c5, #4400ab);
+    /*graident*/
+    top: -95%;
+    left: -10%;
+    transform: rotateZ(-15deg) skewX(30deg);
+    /*Rotate counter_clockwise by 15 deg, slant/skew right by 30deg*/
+    border-radius: 0 0 0 10rem; 
+    opacity: 0.9;
+    z-index: 1;
+
+}
+
+.bg-1{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(transparent 60%, #ff26ac, #f724db );
+    top: -40%;
+    right: -10%;
+    transform: rotateZ(-15deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+}
+
+.bg-2{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(transparent 70%, #ca5995, #f3945a );
+    top: -60%;
+    right: 10%;
+    transform: rotateZ(-15deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+    z-index: 2;
+    opacity: 0.4;
+    box-shadow: 7rem 4rem 6 rem rgba(0,0,0,0.9);
+
+
+}
+/*End of Backgrounds*/
+/*End of Header*/
+/* End of Container*/
